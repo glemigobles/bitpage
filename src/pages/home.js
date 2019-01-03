@@ -32,6 +32,14 @@ const home = (props) => {
                     </div>
                 </div>
             </div>
+            <div className="section-2 partial column">
+                <div className="partial wrapper column">
+                    <Sectionhead animateOnce={true} title={props.data.lang.home.section2title} subtitle={props.data.lang.home.section2subtitle}></Sectionhead>
+                    <div className='partial column center-v center-h margin-top margin-btm'>
+
+                    </div>
+                </div>
+            </div>
         </div >
     );
 };

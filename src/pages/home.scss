@@ -1,3 +1,4 @@
+@import '../assets/styles/variables.scss';
 .home{
     padding:10vh 0vh;
     align-items: center;
@@ -5,7 +6,18 @@
 }
 .section-1{
     margin-top: 5vh;
+    margin-bottom: 0vh;
     padding:10vh 0vh;
     align-items: center;
     justify-content: center;
+}
+.section-2{
+    padding:10vh 0vh;
+    align-items: center;
+    justify-content: center;
+    background: rgba($color1,0.8);
+    color:$color4;
+    *{
+        color:$color4;
+    }
 }
