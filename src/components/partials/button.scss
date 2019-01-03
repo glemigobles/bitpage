@@ -1,0 +1,31 @@
+@import '../../assets/styles/variables.scss';
+
+.light-invert{
+    transition: 0.2s;
+    p{
+        transition: none;
+    }
+   &:hover{
+    background-color: rgba($color1,0.8);
+    color:$color4;
+    transition: 0.2s;
+    } 
+}
+.dark{
+    background-color: rgba($color1,0.8);
+    color:$color4;
+    transition: 0.2s;
+}
+.dark-invert{
+    background-color: rgba($color1,0.8);
+    color:$color4;
+    transition: 0.2s;
+    p{
+        transition: none;
+    }
+    &:hover{
+        background-color: rgba($color4,0.4);
+        color:$color1;
+        transition: 0.2s;
+    }
+}

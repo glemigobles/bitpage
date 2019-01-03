@@ -1,0 +1,238 @@
+@import 'variables.scss';
+
+body {
+  overflow-x: hidden;
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(12px + .5vmin);
+  font-family: $font-1;
+  font-weight: 400;
+  color:$color0;
+}
+#root{
+  width:100%;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: ease-in-out 0.2s;
+}
+
+ol,
+ul,
+dl {
+    margin: 0px;
+}
+
+h1{
+  font-size: 3em;
+  font-weight: 300;
+}
+h2{
+  font-size: 2em;
+  font-weight: 400;
+}
+h3{
+  font-size: 1.5em;
+  font-weight: 300;
+}
+span{
+  letter-spacing: 2px;
+}
+
+a {
+    //color: $color4;
+    text-decoration: none;
+    transition: all 0.2s;
+    &:hover {
+        color: $color2;
+        text-decoration: none;
+    }
+}
+.flex{
+  display: flex;
+}
+
+.partial {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.partial-25 {
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+}
+
+.partial-50 {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+.partial-75 {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  justify-content: flex-start;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.space-btw {
+  justify-content: space-between;
+}
+
+.center-v {
+  align-items: center;
+}
+
+.center-h {
+  justify-content: center;
+}
+
+.start-v {
+  align-items: flex-start;
+}
+
+.start-h {
+  justify-content: flex-start;
+}
+
+.wrapper {
+  width: 72%;
+  max-width: 1300px;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.margin-top {
+  margin-top: 2vh;
+}
+
+.margin-btm {
+  margin-bottom: 2vh;
+}
+.margin-l{
+  margin-left: 2vh;
+}
+.margin-r{
+  margin-right: 2vh;
+}
+
+.b-shadow-1 {
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+}
+
+.b-shadow-2 {
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.15);
+}
+.padding{
+  padding: 2vh
+}
+
+.line {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    height: 4px;
+    border-radius: 2px;
+    width: 15%;
+    max-width: 200px;
+    min-width: 150px;
+    border-bottom: solid 4px $color2;
+}
+.box{
+  margin-top:2vh;
+  margin-bottom: 4vh;
+  padding:12px;
+  background: rgba($color4, 0.4);
+
+}
+.button{
+  margin:12px;
+  padding:12px 24px;
+    color: $color1;
+    background: hsla(0,0%,100%,.4);
+    border-radius: 5px;
+    border-top: 1.5px solid $color10;
+    border-left: 1.5px solid $color10;
+    border-right: 1.5px solid $color11;
+    border-bottom: 1.5px solid $color11;
+    //height: 100%;
+    min-width: 200px;
+    max-width: 300px;
+    white-space: normal;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all easeIn 1s;
+  &:hover{
+    border-top: 1.5px solid $color11;
+    border-left: 1.5px solid $color11;
+    border-right: 1.5px solid $color10;
+    border-bottom: 1.5px solid $color10;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+}
+
+@media(max-width:1600px) {
+    .wrapper {
+        width: 80%;
+    }
+
+}
+
+@media(max-width:1440px) {
+    .wrapper {
+        width: 82%;
+    }
+}
+
+@media(max-width: 1150px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
+@media(max-width: 600px) {
+
+}
+

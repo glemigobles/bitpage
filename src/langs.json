@@ -1,0 +1,56 @@
+[
+    {
+        "name": "EN",
+        "menu": {
+            "menu": "menu",
+            "link1": "home",
+            "link2": "styling/components",
+            "link3": "contact",
+            "link4": "link",
+            "social": "social:",
+            "lang": "language:"
+        },
+        "navbar": {
+            "title": "Bitfinity App",
+            "home": "home"
+        },
+        "header": {
+            "title": "React Bitfinity PWA",
+            "subtitle": "simple progresive web app template"
+        },
+        "home": {
+            "title": "React Bitfinity PWA",
+            "subtitle": "simple progresive web app template",
+            "butt1": "read more",
+            "butt2": "fork on GitHub",
+            "section1title": "What is Bitfinity PWA?",
+            "section1subtitle": "Read about Progresive Web Apps",
+            "section1text": ""
+        }
+    },
+    {
+        "name": "PL",
+        "menu": {
+            "menu": "menu",
+            "link1": "główna",
+            "link2": "komponenty/style",
+            "link3": "kontakt",
+            "social": "social:",
+            "lang": "język:"
+        },
+        "navbar": {
+            "title": "Bitfinity App",
+            "home": "główna"
+        },
+        "header": {
+            "title": "React Bitfinity PWA",
+            "subtitle": "prosty szablon progresywnej aplikacji internetowej"
+        },
+        "home": {
+            "title": "React Bitfinity PWA",
+            "subtitle": "prosty szablon progresywnej aplikacji internetowej",
+            "butt1": "czytaj więcej",
+            "butt2": "sprawdź na GitHub"
+        }
+    }
+]

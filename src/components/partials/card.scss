@@ -1,0 +1,40 @@
+@import '../../assets/styles/variables.scss';
+
+.card{
+    padding: 12px;
+    color: $color1;
+    background: hsla(0,0%,100%,.4);
+    border-radius: 5px;
+    border-top: 1.5px solid $color10;
+    border-left: 1.5px solid $color10;
+    border-right: 1.5px solid $color11;
+    border-bottom: 1.5px solid $color11;
+    height: 100%;
+    max-width: 400px;
+    white-space: normal;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p { 
+        letter-spacing: 2px;
+        color: $color1;
+        text-align: justify;
+    }
+    img {
+        padding: 24px;
+        max-width: 200px;
+        max-height: 200px;
+    }
+}
+.cardline{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    height: 2px;
+    border-radius: 2px;
+    width: 15%;
+    max-width: 200px;
+    min-width: 150px;
+    border-bottom: solid 2px $color2;
+}

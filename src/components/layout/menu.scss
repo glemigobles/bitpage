@@ -1,0 +1,78 @@
+@import '../../assets/styles/variables.scss';
+.menu{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top:0px;
+    left:0px;
+    z-index: 1000;
+    color:$color4;
+    background: rgba(0,0,0,0.92);
+    ul{
+        list-style: none;
+        min-height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        li{
+            a{
+                color:$color4;
+            }
+            padding: 1vh;
+            :hover{
+                transition: ease-in-out 0.3s;
+                transform: scale(1.15);
+                cursor: pointer;
+                color:$color15;
+            }
+        }
+    }
+}
+.exitlink{
+    :hover{
+        transition: ease-in-out 0.3s;
+        cursor: pointer;
+        color:$color3;
+        }
+}
+.sociallink,
+.langlink{
+    :hover{
+        transition: ease-in-out 0.3s;
+        transform: scale(1.15);
+        color:$color3;
+        cursor: pointer;
+        }
+}
+.menuopened{
+    opacity:1;
+    transition: all 0.3s !important;
+    transform:translateY(0);
+    //transform:translateX(0);
+}
+.menuclosed{
+    opacity:0;
+    transition: all 0.3s !important;
+    transform:translateY(-100%);
+    //transform:translateX(-100%);
+}
+.cornersin{
+    transform:scale(1);
+    transition: all 1s !important;
+}
+.cornersout{
+    transform:scale(1.05);
+    transition: all 1s !important;
+}
+.listin{
+    transform:scale(1);
+    transition: all 1s !important;
+}
+.listout{
+    transform:scale(0.05);
+    transition: all 1s !important;
+}
+
+
