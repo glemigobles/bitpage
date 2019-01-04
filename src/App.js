@@ -7,6 +7,7 @@ import "animate.css/animate.min.css";
 import Menu from './components/layout/menu';
 import Navbar from './components/layout/navbar';
 import Container from './components/layout/container';
+import Footer from './components/layout/footer';
 //fontawesome
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -24,6 +25,18 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App partial column">
+          <svg aria-hidden="true" focusable="false" style={{ 'width': 0, 'height': 0, 'position': 'absolute' }}>
+            <linearGradient id="gradient-horizontal">
+              <stop offset="0%" stopColor="#447799" />
+              <stop offset="50%" stopColor="#177759" />
+              <stop offset="100%" stopColor="#227569" />
+            </linearGradient>
+            <linearGradient id="gradient-vertical" x2="0" y2="1">
+              <stop offset="0%" stopColor="var(--color-stop-1)" />
+              <stop offset="50%" stopColor="var(--color-stop-2)" />
+              <stop offset="100%" stopColor="var(--color-stop-3)" />
+            </linearGradient>
+          </svg>
           <Transition in={this.props.menu} timeout={300} mountOnEnter unmountOnExit>
             {(state) => (
               <Menu show={state} toggleMenu={this.props.toggleMenu} toggleLang={this.props.toggleLang} langs={this.props.lang}></Menu>
@@ -31,6 +44,7 @@ class App extends Component {
           </Transition>
           {this.props.nav ? <Navbar toggleMenu={this.props.toggleMenu}></Navbar> : null}
           <Container data={this.props}></Container>
+          <Footer></Footer>
         </div >
       </BrowserRouter>
     );

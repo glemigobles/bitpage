@@ -11,7 +11,7 @@ const card = (props) => {
         titleline = <div className="cardline"></div>;
     }
     if (props.icon) {
-        icon = <img src={props.icon} alt="icon" />
+        icon = <img className="cardicon" src={props.icon} alt="icon" />;
         iconline = <div className="cardline"></div>;
     }
     let animateOnce = false;
@@ -19,13 +19,13 @@ const card = (props) => {
         animateOnce = true;
     }
     return (
-        <ScrollAnimation animateIn='fadeIn' duration={0.5} offset={50} animateOnce={animateOnce}>
+        <ScrollAnimation className="h-100" animateIn='fadeIn' duration={0.5} offset={50} animateOnce={animateOnce}>
             <div className="card" >
                 <h3>{props.title}</h3>
                 {titleline}
                 {icon}
                 {iconline}
-                <p>{props.children}</p>
+                {props.children}
             </div >
         </ScrollAnimation>
     );

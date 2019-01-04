@@ -1,4 +1,4 @@
-import langs from '../langs.json';
+import langs from '../assets/langs.json';
 
 const initialState = {
     lang: langs[0],

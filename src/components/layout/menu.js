@@ -27,7 +27,7 @@ const menu = (props) => {
             <ul className={cssClassesList.join(' ')}>
                 <li><h2><Link to="/" onClick={props.toggleMenu}>{props.langs.menu.link1}</Link></h2></li>
                 <li><h2><Link to="/components" onClick={props.toggleMenu}>{props.langs.menu.link2}</Link></h2></li>
-                <li><h2><Link to="/contact" onClick={props.toggleMenu}>{props.langs.menu.link3}</Link></h2></li>
+                {/* <li><h2><Link to="/contact" onClick={props.toggleMenu}>{props.langs.menu.link3}</Link></h2></li> */}
             </ul>
             <div className={cssClassesCorners.join(' ')}>
                 <div className="partial-50">
@@ -37,7 +37,7 @@ const menu = (props) => {
                 <div className="partial-50 right">
                     <div className="sociallink"><h2>social</h2></div>
                 </div>
-            </div>
+            </div >
         </div >
 
     );
