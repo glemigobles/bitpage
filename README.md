@@ -1,5 +1,7 @@
 ## Bitfinity Progresive App Template
 
+Simple Progresive Web App template
+
 ##Instalation
 
 ### `git clone https://github.com/glemigobles/bitpage my-app`
