@@ -51,10 +51,14 @@ span{
 }
 
 a {
-    //color: $color4;
+    color: inherit;
     text-decoration: none;
-    transition: all 0.2s;
-    &:hover {
+    transition: ease-in 0.2s;
+    *{
+      transition: ease-in 0.2s;
+    }
+    :hover {
+        transition: ease-in 0.2s;
         color: $color2;
         text-decoration: none;
     }
