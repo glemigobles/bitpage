@@ -2,7 +2,7 @@
 
 ##Instalation
 
-### `git clone --depth 1 https://github.com/glemigobles/bitpage my-app`
+### `git clone https://github.com/glemigobles/bitpage my-app`
 ### `cd my-app`
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
