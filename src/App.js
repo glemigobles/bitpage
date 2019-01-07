@@ -21,7 +21,6 @@ library.add(faBars, faTimesCircle, faGithub, faHome);
 
 class App extends Component {
   render() {
-
     return (
       <BrowserRouter>
         <div className="App partial column">

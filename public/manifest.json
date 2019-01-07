@@ -31,6 +31,11 @@
       "src": "favicon-310.png",
       "sizes": "310x310",
       "type": "image/png"
+    },
+    {
+      "src": "favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
   "start_url": ".",

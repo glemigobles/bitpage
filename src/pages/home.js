@@ -22,8 +22,8 @@ const home = (props) => {
                     <h1>{props.data.lang.home.title}</h1>
                     <h3>{props.data.lang.home.subtitle}</h3>
                     <div className="partial wrap center-h margin-btm">
-                        <AnchorLink href='#section-1'><Button >{props.data.lang.home.butt1}</Button></AnchorLink>
-                        <a href="https://github.com/glemigobles/bitpage" target="_blank" rel="noopener noreferrer"><Button type="light-invert">{props.data.lang.home.butt2} <FontAwesomeIcon icon={["fab", "github"]} /></Button></a>
+                        <AnchorLink href='#section-1' ><Button >{props.data.lang.home.butt1}</Button></AnchorLink>
+                        <a href="https://github.com/glemigobles/bitpage" target="_blank" rel="noopener noreferrer" name="github-bitfinity-pwa"><Button type="light-invert">{props.data.lang.home.butt2} <FontAwesomeIcon icon={["fab", "github"]} /></Button></a>
                     </div>
                 </ScrollAnimation>
             </div>
@@ -31,19 +31,19 @@ const home = (props) => {
                 <div className="partial wrapper column">
                     <Sectionhead animateOnce={true} title={props.data.lang.home.section1title} subtitle={props.data.lang.home.section1subtitle}></Sectionhead>
                     <div className='partial wrap center-v center-h margin-top margin-btm'>
-                        <Card title={'Reilable'} icon={relicon}>
+                        <Card title={'Reilable'} icon={relicon} animateOnce={true}>
                             <p>{props.data.lang.home.section1text1}</p>
                             <p>{props.data.lang.home.section1text11}</p>
                         </Card>
-                        <Card title={'Fast'} icon={fasticon}>
+                        <Card title={'Fast'} icon={fasticon} animateOnce={true}>
                             <p>{props.data.lang.home.section1text2}</p>
                             <p>{props.data.lang.home.section1text22}</p>
                         </Card>
-                        <Card title={'Engaging'} icon={engicon}>
+                        <Card title={'Engaging'} icon={engicon} animateOnce={true}>
                             <p>{props.data.lang.home.section1text33}</p>
                         </Card>
                         <p>{props.data.lang.home.section1summary}</p>&nbsp;
-                        <b><a href="https://developers.google.com/web/progressive-web-apps/" target="_blank" rel="noopener noreferrer">{props.data.lang.home.section1summary1}</a></b>
+                        <b><a href="https://developers.google.com/web/progressive-web-apps/" target="_blank" rel="noopener noreferrer" name="about-pwa">{props.data.lang.home.section1summary1}</a></b>
                     </div>
                 </div>
             </div>
@@ -58,40 +58,40 @@ const home = (props) => {
                             <h2>React Redux</h2>
                             <p>{props.data.lang.home.section2feature1}</p>
                             <div className="icons flex center-h">
-                                <a href="https://github.com/reduxjs/redux" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={["fab", "github"]} /></a>
-                                <a href="https://redux.js.org/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="home" /></a>
+                                <a href="https://github.com/reduxjs/redux" target="_blank" rel="noopener noreferrer" name="redux-github"><FontAwesomeIcon icon={["fab", "github"]} /></a>
+                                <a href="https://redux.js.org/" target="_blank" rel="noopener noreferrer" name="redux-homepage"><FontAwesomeIcon icon="home" /></a>
                             </div>
                         </ScrollAnimation>
                         <ScrollAnimation animateIn="zoomIn" animateOnce={true}>
                             <h2>React Router</h2>
                             <p>{props.data.lang.home.section2feature2}</p>
                             <div className="icons flex center-h">
-                                <a href="https://github.com/ReactTraining/react-router" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={["fab", "github"]} /></a>
-                                <a href="https://reacttraining.com/react-router/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="home" /></a>
+                                <a href="https://github.com/ReactTraining/react-router" target="_blank" rel="noopener noreferrer" name="router-github"><FontAwesomeIcon icon={["fab", "github"]} /></a>
+                                <a href="https://reacttraining.com/react-router/" target="_blank" rel="noopener noreferrer" name="router-homepage"><FontAwesomeIcon icon="home" /></a>
                             </div>
                         </ScrollAnimation>
                         <ScrollAnimation animateIn="zoomIn" animateOnce={true}>
                             <h2>React Animate on Scroll</h2>
                             <p>{props.data.lang.home.section2feature3}</p>
                             <div className="icons flex center-h">
-                                <a href="https://github.com/dbramwell/react-animate-on-scroll" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={["fab", "github"]} /></a>
-                                <a href="https://dbramwell.github.io/react-animate-on-scroll/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="home" /></a>
+                                <a href="https://github.com/dbramwell/react-animate-on-scroll" target="_blank" rel="noopener noreferrer" name="raos-github"><FontAwesomeIcon icon={["fab", "github"]} /></a>
+                                <a href="https://dbramwell.github.io/react-animate-on-scroll/" target="_blank" rel="noopener noreferrer" name="raos-homepage"><FontAwesomeIcon icon="home" /></a>
                             </div>
                         </ScrollAnimation>
                         <ScrollAnimation animateIn="zoomIn" animateOnce={true}>
                             <h2>React Transition Group</h2>
                             <p>{props.data.lang.home.section2feature4}</p>
                             <div className="icons flex center-h">
-                                <a href="https://github.com/reactjs/react-transition-group" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={["fab", "github"]} /></a>
-                                <a href="https://reactcommunity.org/react-transition-group/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="home" /></a>
+                                <a href="https://github.com/reactjs/react-transition-group" target="_blank" rel="noopener noreferrer" name="transitiongroup-github"><FontAwesomeIcon icon={["fab", "github"]} /></a>
+                                <a href="https://reactcommunity.org/react-transition-group/" target="_blank" rel="noopener noreferrer" name="transitiongroup-homepage"><FontAwesomeIcon icon="home" /></a>
                             </div>
                         </ScrollAnimation>
                         <ScrollAnimation animateIn="zoomIn" animateOnce={true}>
                             <h2>Font Awesome</h2>
                             <p>{props.data.lang.home.section2feature5}</p>
                             <div className="icons flex center-h">
-                                <a href="https://github.com/FortAwesome/Font-Awesome" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={["fab", "github"]} /></a>
-                                <a href="https://fontawesome.com/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="home" /></a>
+                                <a href="https://github.com/FortAwesome/Font-Awesome" target="_blank" rel="noopener noreferrer" name="fontawesome-github"><FontAwesomeIcon icon={["fab", "github"]} /></a>
+                                <a href="https://fontawesome.com/" target="_blank" rel="noopener noreferrer" name="fontawesome-homepage"><FontAwesomeIcon icon="home" /></a>
                             </div>
                         </ScrollAnimation>
                     </div>

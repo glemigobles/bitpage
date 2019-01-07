@@ -19,7 +19,7 @@ const card = (props) => {
         animateOnce = true;
     }
     return (
-        <ScrollAnimation className="h-100" animateIn='fadeIn' duration={0.5} offset={50} animateOnce={animateOnce}>
+        <ScrollAnimation className="h-100" animateIn='fadeInUp' duration={0.8} offset={50} animateOnce={animateOnce}>
             <div className="card" >
                 <h3>{props.title}</h3>
                 {titleline}

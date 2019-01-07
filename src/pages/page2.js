@@ -19,8 +19,8 @@ const page2 = (props) => {
             <div className='partial column center-v center-h margin-top margin-btm box'>
                 <span className="margin-top margin-btm">
                     Animations are execiuted by external library:
-                    <a href="https://github.com/dbramwell/react-animate-on-scroll"><h2 className="margin-btm"><FontAwesomeIcon icon={["fab", "github"]} /> React Animate On Scroll </h2></a>
-                    Read r-a-o-s <a href="https://github.com/dbramwell/react-animate-on-scroll">documentation</a> to get info how to use it.
+                    <a href="https://github.com/dbramwell/react-animate-on-scroll" target="_blank" rel="noopener noreferrer" name="raos-github"><h2 className="margin-btm" > React Animate On Scroll </h2></a>
+                    Read r-a-o-s <a href="https://github.com/dbramwell/react-animate-on-scroll" target="_blank" rel="noopener noreferrer" name="raos-github">documentation</a> to get info how to use it.
                     <br></br>
                     Besides default options given by r-a-o-s library, every component of that template has <b>'animateOnce'</b> option ( true or false, default - false) to perform element animation just once.
                 </span>
