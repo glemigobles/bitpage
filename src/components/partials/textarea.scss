@@ -1,0 +1,40 @@
+@import '../../assets/styles/variables.scss';
+
+.textarea{
+    min-width: 250px;
+    width:80%;
+    .label{
+        columns: $color1;
+        font-size: calc(18px + .5vmin);
+        margin-top:2vh;
+        margin-bottom:0.5vh;
+    }
+    textarea{
+        background: $color4 ;
+        border-radius: 5px;
+        color: $color1;
+        width:100%;
+        font-size: calc(12px + .5vmin);
+        padding: 1vh;
+        &:focus {
+            border-left: 2px solid $color2;
+            border-right: 2px solid $color3;
+            border-top: 2px solid $color3;
+            border-bottom: 2px solid $color2;
+            outline: none;
+        }
+    }
+}
+
+.textarea-light{
+    textarea{
+        background: $color00;
+    }
+}
+
+.textarea-dark{
+    textarea{
+        background: $color1;
+        color: $color4;
+    }
+}

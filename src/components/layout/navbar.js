@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const navbar = (props) => {
     const nav = document.getElementsByClassName('navbar');
     window.addEventListener("scroll", () => {
-        if (window.scrollY > 100) {
+        if (window.scrollY > 50) {
             nav[0].classList.add('scrolled');
         } else {
             nav[0].classList.remove('scrolled');

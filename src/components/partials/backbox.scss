@@ -1,0 +1,26 @@
+@import '../../assets/styles/variables.scss';
+
+.backbox{
+  text-align: left;
+  display:inherit;
+  flex-direction: inherit;
+  flex-wrap: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+  width:100%;
+  padding:12px;
+  background: rgba($color4, 0.4);
+
+}
+.backbox-dark{
+  background: rgba($color1, 0.8);
+  color:$color4;
+}
+.backbox-light{
+  background: rgba(#fff, 0.9);
+  color:$color0;
+}
+.backbox-outlined{
+    background: none;
+    border:1px solid $color4;
+}

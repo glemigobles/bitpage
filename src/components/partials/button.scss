@@ -41,7 +41,7 @@
     }
   }
 }
-.light-invert{
+.button-light-invert{
     transition: 0.2s;
    &:hover{
     background-color: rgba($color1,0.8);
@@ -49,7 +49,7 @@
     transition: 0.2s;
     } 
 }
-.dark{
+.button-dark{
     background-color: rgba($color1,0.8);
     color:$color4;
     transition: 0.2s;
@@ -57,7 +57,7 @@
        color:$color4; 
     }
 }
-.dark-invert{
+.button-dark-invert{
     background-color: rgba($color1,0.8);
     color:$color4;
     transition: 0.2s;

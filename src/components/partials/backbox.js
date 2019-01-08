@@ -1,17 +1,16 @@
 import React from 'react';
-import './button.scss';
+import './backbox.scss';
 import ScrollAnimation from 'react-animate-on-scroll';
 import Standardoptions from './standardoptions';
 
 
-const button = (props) => {
-    //**standardoptions*
-    let options = Standardoptions('button', props, ['dark', 'light-invert', 'dark-invert']);
-    //**additonal options */
-    //**component pattern */
+const backbox = (props) => {
+    //**standard options*/
+    let options = Standardoptions('backbox', props, ['dark', 'light', 'outlined']);
+    //**component pattern*/
     let element =
         <div className={options.cssClassesMenu} >
-            <p>{props.children}</p>
+            {props.children}
         </div >;
     //**output component with optional classes and animation*/
     const Element = !options.animate ?
@@ -28,4 +27,4 @@ const button = (props) => {
     );
 };
 
-export default button;
+export default backbox;

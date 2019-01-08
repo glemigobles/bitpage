@@ -1,18 +1,35 @@
 import React from 'react';
-import './button.scss';
+import './input.scss';
 import ScrollAnimation from 'react-animate-on-scroll';
 import Standardoptions from './standardoptions';
 
-
-const button = (props) => {
+const input = (props) => {
     //**standardoptions*
-    let options = Standardoptions('button', props, ['dark', 'light-invert', 'dark-invert']);
+    let options = Standardoptions('input', props, ['light', 'dark']);
     //**additonal options */
+    let label;
+    let value;
+    let name;
+    let form;
+    if (props.form) {
+        form = props.form;
+    }
+    if (props.label) {
+        label = <p className="label">{props.label}</p>
+    }
+    if (props.name) {
+        name = props.name;
+    }
+    if (props.value) {
+        value = props.value;
+    }
     //**component pattern */
     let element =
-        <div className={options.cssClassesMenu} >
-            <p>{props.children}</p>
-        </div >;
+        <div className={options.cssClassesMenu}>
+            {label}
+            <input value={value} name={name} form={form}>
+            </input >
+        </div>
     //**output component with optional classes and animation*/
     const Element = !options.animate ?
         <div className={props.addClass}>
@@ -28,4 +45,4 @@ const button = (props) => {
     );
 };
 
-export default button;
+export default input;
