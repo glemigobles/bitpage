@@ -4,7 +4,7 @@
         "menu": {
             "menu": "menu",
             "link1": "home",
-            "link2": "styling/components",
+            "link2": "documentation",
             "link3": "contact",
             "link4": "link",
             "social": "social:",
@@ -47,7 +47,7 @@
         "menu": {
             "menu": "menu",
             "link1": "główna",
-            "link2": "komponenty/style",
+            "link2": "dokumentacja",
             "link3": "kontakt",
             "social": "social:",
             "lang": "język:"

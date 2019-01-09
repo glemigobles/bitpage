@@ -8,8 +8,7 @@
     margin-top: 5vh;
     margin-bottom: 0vh;
     padding:10vh 0vh;
-    align-items: center;
-    justify-content: center;
+    min-height: 100vh;
     .card{
         margin-top:3vh;
         min-height: 50vh;
@@ -17,10 +16,10 @@
 }
 .section-2{
     padding:10vh 0vh;
-    align-items: center;
-    justify-content: center;
-    background: rgba($color1,0.8);
+    min-height: 100vh;
+    //background: rgba($color1,0.8);
     color:$color4;
+    text-align: center;
     *{
         color:$color4;
     }

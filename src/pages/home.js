@@ -10,7 +10,8 @@ import Sectionhead from '../components/partials/sectionhead';
 import Card from '../components/partials/card';
 import Button from '../components/partials/button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import Backbox from '../components/partials/backbox';
 
 const home = (props) => {
 
@@ -23,33 +24,37 @@ const home = (props) => {
                     <h3>{props.data.lang.home.subtitle}</h3>
                     <div className="partial wrap center-h margin-btm">
                         <AnchorLink href='#section-1' ><Button >{props.data.lang.home.butt1}</Button></AnchorLink>
-                        <a href="https://github.com/glemigobles/bitpage" target="_blank" rel="noopener noreferrer" name="github-bitfinity-pwa"><Button type="light-invert">{props.data.lang.home.butt2} <FontAwesomeIcon icon={["fab", "github"]} /></Button></a>
+                        <a href="https://github.com/glemigobles/bitpage" target="_blank" rel="noopener noreferrer" name="github-bitfinity-pwa"><Button color="light-invert">{props.data.lang.home.butt2} <FontAwesomeIcon icon={["fab", "github"]} /></Button></a>
                     </div>
                 </ScrollAnimation>
             </div>
-            <div className="section-1 box partial column" id="section-1">
-                <div className="partial wrapper column">
-                    <Sectionhead animateOnce={true} title={props.data.lang.home.section1title} subtitle={props.data.lang.home.section1subtitle}></Sectionhead>
-                    <div className='partial wrap center-v center-h margin-top margin-btm'>
-                        <Card title={'Reilable'} icon={relicon} animateOnce={true}>
+            <Backbox addClass="partial column center-v">
+                <div className=" section-1 partial start-h wrapper column" id="section-1">
+                    <Sectionhead subtitleAnimation="fadeInLeft" lineAnimation="fadeInLeft"
+                        animateIn={'fadeInUp'} animate={true} animateOnce={true} title={props.data.lang.home.section1title}
+                        subtitle={props.data.lang.home.section1subtitle}></Sectionhead>
+                    <div className='partial wrap center-v center-h margin-top margin-btm h-100'>
+                        <Card title={'Reilable'} icon={relicon} animateOnce={true} addClass="h100">
                             <p>{props.data.lang.home.section1text1}</p>
                             <p>{props.data.lang.home.section1text11}</p>
                         </Card>
-                        <Card title={'Fast'} icon={fasticon} animateOnce={true}>
+                        <Card title={'Fast'} icon={fasticon} animateOnce={true} addClass="h100">
                             <p>{props.data.lang.home.section1text2}</p>
                             <p>{props.data.lang.home.section1text22}</p>
                         </Card>
-                        <Card title={'Engaging'} icon={engicon} animateOnce={true}>
+                        <Card title={'Engaging'} icon={engicon} animateOnce={true} addClass="h100">
                             <p>{props.data.lang.home.section1text33}</p>
                         </Card>
                         <p>{props.data.lang.home.section1summary}</p>&nbsp;
                         <b><a href="https://developers.google.com/web/progressive-web-apps/" target="_blank" rel="noopener noreferrer" name="about-pwa">{props.data.lang.home.section1summary1}</a></b>
                     </div>
                 </div>
-            </div>
-            <div className="section-2 partial column" id='section-2'>
-                <div className="partial wrapper column">
-                    <Sectionhead animateOnce={true} title={props.data.lang.home.section2title} subtitle={props.data.lang.home.section2subtitle}></Sectionhead>
+
+            </Backbox>
+            <Backbox color="dark" addClass="partial column center-v">
+                <div className="section-2 partial start-v wrapper column" id="section-2">
+                    <Sectionhead subtitleAnimation="fadeInLeft" lineAnimation="fadeInLeft"
+                        animateIn={'fadeInUp'} animate={true} animateOnce={true} title={props.data.lang.home.section2title} subtitle={props.data.lang.home.section2subtitle}></Sectionhead>
                     <div className='partial column center-v center-h margin-top margin-btm'>
                         <br></br>
                         <br></br>
@@ -96,7 +101,7 @@ const home = (props) => {
                         </ScrollAnimation>
                     </div>
                 </div>
-            </div>
+            </Backbox>
         </div >
     );
 };

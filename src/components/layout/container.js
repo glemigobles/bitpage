@@ -8,8 +8,8 @@ import Templatedocs from '../../pages/templatedocs';
 const container = (props) => {
     return (
         <div className="container partial column" >
-            <Route path="/" exact render={() => <Home data={props.data}/>} />
-            <Route path="/components" exact render={() => <Templatedocs data={props.data}/>} />
+            <Route path="/" exact render={() => <Home data={props.data} />} />
+            <Route path="/documentation" exact render={() => <Templatedocs data={props.data} />} />
         </div >
     );
 };

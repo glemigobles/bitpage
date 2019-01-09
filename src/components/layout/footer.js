@@ -15,7 +15,7 @@ const footer = (props) => {
 
     return (
         <div className='footer partial column center-h padding' >
-            <p>React Bitfinity PWA v 0.4</p>
+            <p>React Bitfinity PWA v 0.6</p>
             <h3 className="margin-top">
                 <a className="margin-r" href="https://github.com/glemigobles/bitpage" target="_blank" rel="noopener noreferrer" name="github-bitfinity-pwa"><FontAwesomeIcon icon={["fab", "github"]} /></a>
                 <a href="https://bitfinity.eu" target="_blank" rel="noopener noreferrer" name="homepage-bitfinity"><FontAwesomeIcon icon="home" /></a>

@@ -26,16 +26,15 @@ const menu = (props) => {
             </div>
             <ul className={cssClassesList.join(' ')}>
                 <li><h2><Link to="/" onClick={props.toggleMenu}>{props.langs.menu.link1}</Link></h2></li>
-                <li><h2><Link to="/components" onClick={props.toggleMenu}>{props.langs.menu.link2}</Link></h2></li>
+                <li><h2><Link to="/documentation" onClick={props.toggleMenu}>{props.langs.menu.link2}</Link></h2></li>
                 {/* <li><h2><Link to="/contact" onClick={props.toggleMenu}>{props.langs.menu.link3}</Link></h2></li> */}
             </ul>
             <div className={cssClassesCorners.join(' ')}>
-                <div className="partial-50">
-                    <div className="langlink margin-r" onClick={() => props.toggleLang(0)}><h2 >EN</h2></div>
-                    <div className="langlink margin-r" onClick={() => props.toggleLang(1)}><h2>PL</h2></div>
-                </div>
-                <div className="partial-50 right">
-                    <div className="sociallink"><h2>social</h2></div>
+                <div className="partial center-h center-v">
+                    {/* <div className="langlink margin-r" onClick={() => props.toggleLang(0)}><h2 >EN</h2></div>
+                    <div className="langlink margin-r" onClick={() => props.toggleLang(1)}><h2>PL</h2></div> */}
+                    <h2><a className="margin-r" href="https://github.com/glemigobles/bitpage" target="_blank" rel="noopener noreferrer" name="github-bitfinity-pwa"><FontAwesomeIcon icon={["fab", "github"]} /></a></h2>
+                    <h2><a href="https://bitfinity.eu" target="_blank" rel="noopener noreferrer" name="homepage-bitfinity"><FontAwesomeIcon icon="home" /></a></h2>
                 </div>
             </div >
         </div >

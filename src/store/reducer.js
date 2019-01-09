@@ -4,6 +4,7 @@ const initialState = {
     lang: langs[0],
     menu: false,
     nav: true,
+    sidebar: false,
 }
 const reducer = (state = initialState, action) => {
     switch (action.type) {
