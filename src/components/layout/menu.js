@@ -22,7 +22,7 @@ const menu = (props) => {
         <div className={cssClassesMenu.join(' ')} >
             <div className={cssClassesCorners.join(' ')}>
                 <h1>menu</h1>
-                <div onClick={props.toggleMenu} className="exitlink"><h1><FontAwesomeIcon icon="times-circle" /></h1></div>
+                <div onClick={props.toggleMenu} className="exitlink"><h1><FontAwesomeIcon icon={["far", "window-close"]} /></h1></div>
             </div>
             <ul className={cssClassesList.join(' ')}>
                 <li><h2><Link to="/" onClick={props.toggleMenu}>{props.langs.menu.link1}</Link></h2></li>

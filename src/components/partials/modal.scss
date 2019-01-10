@@ -1,0 +1,31 @@
+@import '../../assets/styles/variables.scss';
+.modal{
+    display:flex;
+    flex-direction: column;
+    background: $color14;
+    max-width: 50%;
+    min-width: 250px;
+    .button{
+        min-width:150px;
+    }
+}
+#close-modal{
+    transition: none;
+    &:hover{
+        transition: none;
+        cursor:pointer;
+        color:$color15;
+    }
+}
+.modalopened{
+    opacity:1;
+    transition: all 0.3s !important;
+    transform:translateY(0);
+    //transform:translateX(0);
+}
+.modalclosed{
+    opacity:0;
+    transition: all 0.3s !important;
+    transform:translateY(-100%);
+    //transform:translateX(-100%);
+}

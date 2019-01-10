@@ -10,7 +10,7 @@ const button = (props) => {
     //**additonal options */
     //**component pattern */
     let element =
-        <div className={options.cssClassesMenu} >
+        <div className={options.cssClassesMenu} onClick={props.onClick}>
             <p>{props.children}</p>
         </div >;
     //**output component with optional classes and animation*/
@@ -19,7 +19,7 @@ const button = (props) => {
             {element}
         </div>
         :
-        <ScrollAnimation animateIn={options.animateIn} animateOut={options.animateOut} duration={options.animationDuration} offset={options.animationOffset} delay={options.animationDelay} animateOnce={options.animateOnce}  className={props.addClass}>
+        <ScrollAnimation animateIn={options.animateIn} animateOut={options.animateOut} duration={options.animationDuration} offset={options.animationOffset} delay={options.animationDelay} animateOnce={options.animateOnce} className={props.addClass}>
             {element}
         </ScrollAnimation>
     //**return component */

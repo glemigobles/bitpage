@@ -12,12 +12,12 @@ import Footer from './components/layout/footer';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
-import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
+import { faWindowClose } from '@fortawesome/free-regular-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 //transition/animations
 import Transition from 'react-transition-group/Transition';
 
-library.add(faBars, faTimesCircle, faGithub, faHome);
+library.add(faBars, faWindowClose, faGithub, faHome);
 
 class App extends Component {
   render() {
